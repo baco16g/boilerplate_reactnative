@@ -1,7 +1,10 @@
 {
-  "name": "albums",
+  "name": "boilerplate_reactnative",
   "version": "0.0.1",
   "private": true,
+  "author": {
+    "name" : "yuki kobayashi"
+  },
   "scripts": {
     "start": "tsc --watch & node node_modules/react-native/local-cli/cli.js start",
     "android": "node_modules/.bin/react-native run-android",
