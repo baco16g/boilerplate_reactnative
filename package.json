@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "author": {
-    "name" : "yuki kobayashi"
+    "name": "yuki kobayashi"
   },
   "scripts": {
     "start": "tsc --watch & node node_modules/react-native/local-cli/cli.js start",
