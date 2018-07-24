@@ -1,0 +1,24 @@
+{
+  "rulesDirectory": ["tslint-plugin-prettier"],
+  "extends": ["tslint:recommended", "tslint-config-prettier"],
+  "rules": {
+    "prettier": [
+      true,
+      {
+        "trailingComma": "none",
+        "singleQuote": true,
+        "semi": false
+      }
+    ],
+    "ordered-imports": false,
+    "object-literal-sort-keys": false,
+    "prefer-const": true,
+    "no-unused-vars": [
+      2,
+      {
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_"
+      }
+    ]
+  }
+}
