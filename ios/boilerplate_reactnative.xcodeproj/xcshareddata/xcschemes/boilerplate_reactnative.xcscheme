@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "albums.app"
-               BlueprintName = "albums"
-               ReferencedContainer = "container:albums.xcodeproj">
+               BuildableName = "boilerplate_reactnative.app"
+               BlueprintName = "boilerplate_reactnative"
+               ReferencedContainer = "container:boilerplate_reactnative.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "albumsTests.xctest"
-               BlueprintName = "albumsTests"
-               ReferencedContainer = "container:albums.xcodeproj">
+               BuildableName = "boilerplate_reactnativeTests.xctest"
+               BlueprintName = "boilerplate_reactnativeTests"
+               ReferencedContainer = "container:boilerplate_reactnative.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "albumsTests.xctest"
-               BlueprintName = "albumsTests"
-               ReferencedContainer = "container:albums.xcodeproj">
+               BuildableName = "boilerplate_reactnativeTests.xctest"
+               BlueprintName = "boilerplate_reactnativeTests"
+               ReferencedContainer = "container:boilerplate_reactnative.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "albums.app"
-            BlueprintName = "albums"
-            ReferencedContainer = "container:albums.xcodeproj">
+            BuildableName = "boilerplate_reactnative.app"
+            BlueprintName = "boilerplate_reactnative"
+            ReferencedContainer = "container:boilerplate_reactnative.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "albums.app"
-            BlueprintName = "albums"
-            ReferencedContainer = "container:albums.xcodeproj">
+            BuildableName = "boilerplate_reactnative.app"
+            BlueprintName = "boilerplate_reactnative"
+            ReferencedContainer = "container:boilerplate_reactnative.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -113,9 +113,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "albums.app"
-            BlueprintName = "albums"
-            ReferencedContainer = "container:albums.xcodeproj">
+            BuildableName = "boilerplate_reactnative.app"
+            BlueprintName = "boilerplate_reactnative"
+            ReferencedContainer = "container:boilerplate_reactnative.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

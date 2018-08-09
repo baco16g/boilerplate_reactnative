@@ -1,4 +1,4 @@
-package com.albums;
+package com.boilerplate_reactnative;
 
 import android.app.Application;
 

@@ -6,6 +6,7 @@
     "name": "yuki kobayashi"
   },
   "scripts": {
+    "install": "react-native upgrade",
     "start": "tsc --watch & node node_modules/react-native/local-cli/cli.js start",
     "android": "node_modules/.bin/react-native run-android",
     "ios": "node_modules/.bin/react-native run-ios",
