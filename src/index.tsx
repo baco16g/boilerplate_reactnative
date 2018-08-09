@@ -2,5 +2,6 @@
 
 import { AppRegistry } from 'react-native'
 import App from './App'
+import data from '../app.json'
 
-AppRegistry.registerComponent('albums', () => App)
+AppRegistry.registerComponent(data.name, () => App)
