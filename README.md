@@ -10,3 +10,7 @@ $ npm install
 ```
 
 `npm install` command includes `react-native upgrade` command.
+
+## TODO
+
+* add `Redux`
