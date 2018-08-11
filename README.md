@@ -18,4 +18,4 @@ Should not overwrite `.gitignore`.
 
 ## TODO
 
-* add `Redux`
+* ~~add `Redux`~~
