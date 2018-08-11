@@ -6,12 +6,12 @@
     "name": "yuki kobayashi"
   },
   "scripts": {
-    "install": "react-native upgrade",
     "start": "run-s dev:ts dev:rn",
     "dev:ts": "tsc --watch",
     "dev:rn": "node node_modules/react-native/local-cli/cli.js start",
     "android": "node_modules/.bin/react-native run-android",
     "ios": "node_modules/.bin/react-native run-ios",
+    "upgrade": "react-native upgrade",
     "test": "jest",
     "lint": "tslint './src/**/*.{ts,tsx,js}'",
     "format": "tslint './src/**/*.{ts,tsx,js}' --fix",
