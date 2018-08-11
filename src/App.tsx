@@ -1,40 +1,30 @@
 import * as React from 'react'
-import { Platform, StyleSheet, Text, View } from 'react-native'
+import { View } from 'react-native'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import rootReducer from './reducers'
+import { Header, Card, CardSection } from './components/common'
+import Counter from './containers/Counter'
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-  android:
-    'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu'
-})
-
-export default class App extends React.Component<{}> {
-  public render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
-      </View>
-    )
-  }
+function configureStore(initialState?: object) {
+  return createStore(rootReducer, initialState!)
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF'
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5
-  }
-})
+const store = configureStore()
+
+const App = () => {
+  return (
+    <Provider store={store}>
+      <View style={{ flex: 1 }}>
+        <Header headerText="Counter App" />
+        <Card>
+          <CardSection>
+            <Counter />
+          </CardSection>
+        </Card>
+      </View>
+    </Provider>
+  )
+}
+
+export default App
