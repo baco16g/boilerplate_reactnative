@@ -1,12 +1,12 @@
 import * as React from 'react'
 import { View } from 'react-native'
 import { Provider } from 'react-redux'
-import { createStore } from 'redux'
+import { createStore, Store } from 'redux'
 import rootReducer from './reducers'
 import { Header, Card, CardSection } from './components/common'
 import Counter from './containers/Counter'
 
-function configureStore(initialState?: object) {
+function configureStore(initialState?: object): Store {
   return createStore(rootReducer, initialState!)
 }
 

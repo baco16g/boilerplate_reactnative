@@ -10,12 +10,9 @@ $ npm install
 
 # react-native upgrade
 $ npm run upgrade
+
+# edit this project name in package.json
+$ vi package.json
 ```
 
-`npm install` command includes `react-native upgrade` command.
-
 Should not overwrite `.gitignore`.
-
-## TODO
-
-* ~~add `Redux`~~
