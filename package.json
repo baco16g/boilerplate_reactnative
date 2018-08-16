@@ -42,7 +42,10 @@
     "react-native": "0.56.0",
     "react-redux": "^5.0.7",
     "recompose": "^0.27.1",
-    "redux": "^4.0.0"
+    "redux": "^4.0.0",
+    "typescript-fsa": "^3.0.0-beta-2",
+    "typescript-fsa-reducers": "^0.4.5",
+    "typescript-fsa-redux-thunk": "^1.0.1"
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",
