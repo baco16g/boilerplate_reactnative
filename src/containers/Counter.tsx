@@ -6,7 +6,7 @@ import { Dispatch, bindActionCreators } from 'redux'
 import { $Call } from 'utility-types'
 import { IRootState } from '../reducers'
 import * as counterActions from '../actions/counter'
-import { Button } from '../components/common'
+import { Card, CardSection, Button } from '../components/common'
 
 interface IState {
   count: number
@@ -20,19 +20,23 @@ interface IProps
 const Counter = ({ count, actions }: IProps) => {
   const { textStyle, buttonStyle } = styles
   return (
-    <View style={{ flex: 1 }}>
-      <Text style={textStyle}>{count}</Text>
-      <View style={buttonStyle}>
-        <Button onPress={() => actions.increment()}>
-          <Text>INCREMENT</Text>
-        </Button>
-      </View>
-      <View style={buttonStyle}>
-        <Button onPress={() => actions.asyncIncrement(null)}>
-          <Text>ASYNC INCREMENT</Text>
-        </Button>
-      </View>
-    </View>
+    <Card>
+      <CardSection>
+        <View style={{ flex: 1 }}>
+          <Text style={textStyle}>{count}</Text>
+          <View style={buttonStyle}>
+            <Button onPress={() => actions.increment()}>
+              <Text>INCREMENT</Text>
+            </Button>
+          </View>
+          <View style={buttonStyle}>
+            <Button onPress={() => actions.asyncIncrement(null)}>
+              <Text>ASYNC INCREMENT</Text>
+            </Button>
+          </View>
+        </View>
+      </CardSection>
+    </Card>
   )
 }
 
