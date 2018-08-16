@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 import { Dispatch, bindActionCreators } from 'redux'
 import { $Call } from 'utility-types'
 import { IRootState } from '../reducers'
-import * as counterActions from '../actions/counterActions'
+import * as counterActions from '../actions/counter'
 import { Button } from '../components/common'
 
 interface IState {
@@ -18,13 +18,20 @@ interface IProps
     IState {}
 
 const Counter = ({ count, actions }: IProps) => {
-  const { textStyle } = styles
+  const { textStyle, buttonStyle } = styles
   return (
     <View style={{ flex: 1 }}>
       <Text style={textStyle}>{count}</Text>
-      <Button onPress={() => actions.increment()}>
-        <Text>INCREMENT</Text>
-      </Button>
+      <View style={buttonStyle}>
+        <Button onPress={() => actions.increment()}>
+          <Text>INCREMENT</Text>
+        </Button>
+      </View>
+      <View style={buttonStyle}>
+        <Button onPress={() => actions.asyncIncrement(null)}>
+          <Text>ASYNC INCREMENT</Text>
+        </Button>
+      </View>
     </View>
   )
 }
@@ -33,6 +40,9 @@ const styles = StyleSheet.create({
   textStyle: {
     fontSize: 32,
     textAlign: 'center'
+  },
+  buttonStyle: {
+    marginTop: 6
   }
 })
 
